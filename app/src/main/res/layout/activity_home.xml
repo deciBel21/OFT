@@ -1,0 +1,1010 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".HomeActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:backgroundTint="@color/black">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:backgroundTint="@color/black">
+
+            <ImageView
+                android:id="@+id/readid"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_baseline_menu_book_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginTop="25dp"
+                android:background="@color/black"
+                android:backgroundTint="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/readid">
+
+                <ImageView
+                    android:id="@+id/shelf_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@color/black"
+                    android:backgroundTint="@color/black"
+                    android:padding="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/banner" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/Series"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="Series"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/Categories"
+                app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+            <HorizontalScrollView
+                android:id="@+id/SeriesView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Series">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/SeriesCard1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:background="@color/black"
+                        android:backgroundTint="@color/black"
+                        app:cardCornerRadius="25dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/seriescardimage1"
+                            android:layout_width="175dp"
+                            android:layout_height="250dp"
+                            android:layout_gravity="center"
+                            android:background="@color/black"
+                            android:backgroundTint="@color/black"
+                            android:padding="5dp"
+                            android:scaleType="centerCrop" />
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/SeriesCard2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:background="@color/black"
+                        android:backgroundTint="@color/black"
+                        app:cardCornerRadius="25dp"
+                        app:layout_constraintStart_toEndOf="@+id/SeriesCard1"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/seriescardimage2"
+                            android:layout_width="175dp"
+                            android:layout_height="250dp"
+                            android:layout_gravity="center"
+                            android:background="@color/black"
+                            android:backgroundTint="@color/black"
+                            android:padding="5dp"
+                            android:scaleType="centerCrop" />
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/SeriesCard3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:background="@color/black"
+                        android:backgroundTint="@color/black"
+                        app:cardCornerRadius="25dp"
+                        app:layout_constraintStart_toEndOf="@+id/SeriesCard2"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/seriescardimage3"
+                            android:layout_width="175dp"
+                            android:layout_height="250dp"
+                            android:layout_gravity="center"
+                            android:background="@color/black"
+                            android:backgroundTint="@color/black"
+                            android:padding="5dp"
+                            android:scaleType="centerCrop" />
+                    </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                        android:id="@+id/SeriesCard4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:background="@color/black"
+                        android:backgroundTint="@color/black"
+                        app:cardCornerRadius="25dp"
+                        app:layout_constraintStart_toEndOf="@+id/SeriesCard3"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/seriescardimage4"
+                            android:layout_width="175dp"
+                            android:layout_height="250dp"
+                            android:layout_gravity="center"
+                            android:background="@color/black"
+                            android:backgroundTint="@color/black"
+                            android:padding="5dp"
+                            android:scaleType="centerCrop" />
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/SeriesCard5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:background="@color/black"
+                        android:backgroundTint="@color/black"
+                        app:cardCornerRadius="25dp"
+                        app:layout_constraintStart_toEndOf="@+id/SeriesCard4"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/seriescardimage5"
+                            android:layout_width="175dp"
+                            android:layout_height="250dp"
+                            android:layout_gravity="center"
+                            android:background="@color/black"
+                            android:backgroundTint="@color/black"
+                            android:padding="5dp"
+                            android:scaleType="centerCrop" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/LatestRelease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Author"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:layout_marginStart="15dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/BestSellersView" />
+
+            <HorizontalScrollView
+                android:id="@+id/CuratedView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LatestRelease">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/LatestRelease1"
+                        android:layout_width="120dp"
+                        android:layout_height="175dp"
+                        android:scaleType="centerCrop"
+                        android:layout_marginStart="5dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/LatestReleaseTile1"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Happy House"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/LatestRelease1" />
+
+                    <TextView
+                        android:id="@+id/LatestReleaseAuthor1"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Jane Abbott"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:textStyle="normal"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/LatestReleaseTile1" />
+
+                    <ImageView
+                        android:id="@+id/LatestRelease2"
+                        android:scaleType="centerCrop"
+                        android:layout_width="120dp"
+                        android:layout_height="175dp"
+                        android:layout_marginStart="30dp"
+                        app:layout_constraintStart_toEndOf="@+id/LatestRelease1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/LatestReleaseTile2"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="5dp"
+                        android:text="John Henry Smith"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/LatestRelease1"
+                        app:layout_constraintTop_toBottomOf="@+id/LatestRelease2" />
+
+                    <TextView
+                        android:id="@+id/LatestReleaseAuthor2"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Frederick Upham Adams"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:textStyle="normal"
+                        app:layout_constraintStart_toEndOf="@+id/LatestRelease1"
+                        app:layout_constraintTop_toBottomOf="@+id/LatestReleaseTile2" />
+
+                    <ImageView
+                        android:id="@+id/LatestRelease3"
+                        android:layout_width="120dp"
+                        android:layout_height="175dp"
+                        android:scaleType="centerCrop"
+                        android:layout_marginStart="30dp"
+                        app:layout_constraintStart_toEndOf="@+id/LatestRelease2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/LatestReleaseTile3"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="5dp"
+                        android:text="The Unspeakable Perk"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/LatestRelease2"
+                        app:layout_constraintTop_toBottomOf="@+id/LatestRelease3" />
+
+                    <TextView
+                        android:id="@+id/LatestReleasAuthor3"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Samuel Hopkins Adams"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:textStyle="normal"
+                        app:layout_constraintStart_toEndOf="@+id/LatestRelease2"
+                        app:layout_constraintTop_toBottomOf="@+id/LatestReleaseTile3" />
+
+                    <ImageView
+                        android:id="@+id/LatestRelease4"
+                        android:scaleType="centerCrop"
+                        android:layout_width="120dp"
+                        android:layout_height="175dp"
+                        android:layout_marginStart="30dp"
+                        app:layout_constraintStart_toEndOf="@+id/LatestRelease3"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/LatestReleaseTitle4"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Miss Cayley's Adventures"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/LatestRelease3"
+                        app:layout_constraintTop_toBottomOf="@+id/LatestRelease4" />
+
+                    <TextView
+                        android:id="@+id/LatestReleaseAuthor4"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Grant Allen"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:textStyle="normal"
+                        app:layout_constraintStart_toEndOf="@+id/LatestRelease3"
+                        app:layout_constraintTop_toBottomOf="@+id/LatestReleaseTitle4" />
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/BestSellers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="4dp"
+                android:text="Best Sellers"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/BestSellersView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CategoryView" />
+
+            <HorizontalScrollView
+                android:id="@+id/BestSellersView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/BestSellers">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/BestSellers1"
+                        android:layout_width="120dp"
+                        android:layout_height="175dp"
+                        android:layout_marginStart="5dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/BestSellersTile1"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Pride &amp; Prejudice"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/BestSellers1" />
+
+                    <TextView
+                        android:id="@+id/BestSellersAuthor1"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Jane Austen"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:textStyle="normal"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/BestSellersTile1" />
+                  <!--  <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/qprogress"
+                        android:layout_marginTop="5dp"
+                        app:cpb_background_progressbar_color="#DADADA"
+                        app:cpb_background_progressbar_width="5dp"
+                        app:cpb_progress="75"
+                        android:layout_marginStart="75dp"
+                        app:cpb_progress_direction="to_right"
+                        app:cpb_progressbar_color="@color/black"
+                        app:cpb_progressbar_width="4dp"
+                        app:cpb_round_border="false"
+                        app:layout_constraintTop_toBottomOf="@+id/BestSellers1"
+                        app:layout_constraintStart_toStartOf="@+id/BestSellersTile1"
+                        />-->
+
+                    <ImageView
+                        android:id="@+id/BestSellers2"
+                        android:layout_width="120dp"
+                        android:layout_height="175dp"
+                        android:scaleType="centerCrop"
+                        android:layout_marginStart="30dp"
+                        app:layout_constraintStart_toEndOf="@+id/BestSellers1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/BestSellersTile2"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Healing Her Heart"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/BestSellers1"
+                        app:layout_constraintTop_toBottomOf="@+id/BestSellers2" />
+
+                    <TextView
+                        android:id="@+id/BestSellersAuthor2"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Laura Scott"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:textStyle="normal"
+                        app:layout_constraintStart_toEndOf="@+id/BestSellers1"
+                        app:layout_constraintTop_toBottomOf="@+id/BestSellersTile2" />
+
+                    <ImageView
+                        android:id="@+id/BestSellers3"
+                        android:layout_width="120dp"
+                        android:layout_height="175dp"
+                        android:scaleType="centerCrop"
+                        android:layout_marginStart="30dp"
+                        app:layout_constraintStart_toEndOf="@+id/BestSellers2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/BestSellersTile3"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Persuasion"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/BestSellers2"
+                        app:layout_constraintTop_toBottomOf="@+id/BestSellers3" />
+
+                    <TextView
+                        android:id="@+id/BestSellersAuthor3"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Jane Austen"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:textStyle="normal"
+                        app:layout_constraintStart_toEndOf="@+id/BestSellers2"
+                        app:layout_constraintTop_toBottomOf="@+id/BestSellersTile3" />
+
+                    <ImageView
+                        android:id="@+id/BestSellers4"
+                        android:layout_width="120dp"
+                        android:layout_height="175dp"
+                        android:scaleType="centerCrop"
+                        android:layout_marginStart="30dp"
+                        app:layout_constraintStart_toEndOf="@+id/BestSellers3"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/BestSellersTile4"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Jane Eyre"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/BestSellers3"
+                        app:layout_constraintTop_toBottomOf="@+id/BestSellers4" />
+
+                    <TextView
+                        android:id="@+id/BestSellersAuthor4"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Charlotte Brontë"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:textStyle="normal"
+                        app:layout_constraintStart_toEndOf="@+id/BestSellers3"
+                        app:layout_constraintTop_toBottomOf="@+id/BestSellersTile4" />
+
+                    <ImageView
+                        android:id="@+id/BestSellers5"
+                        android:layout_width="120dp"
+                        android:layout_height="175dp"
+                        android:scaleType="centerCrop"
+                        android:layout_marginStart="30dp"
+                        app:layout_constraintStart_toEndOf="@+id/BestSellers4"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/BestSellersTile5"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Anna Karenina"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/BestSellers4"
+                        app:layout_constraintTop_toBottomOf="@+id/BestSellers5" />
+
+                    <TextView
+                        android:id="@+id/BestSellersAuthor5"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="5dp"
+                        android:text="graf Tolstoy Leo"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:textStyle="normal"
+                        app:layout_constraintStart_toEndOf="@+id/BestSellers4"
+                        app:layout_constraintTop_toBottomOf="@+id/BestSellersTile5" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+            <TextView
+                android:id="@+id/Categories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="530dp"
+                android:text="Categories"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.055"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <HorizontalScrollView
+                android:id="@+id/CategoryView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Categories">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/Category1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:backgroundTint="@color/black"
+                        android:text="Romance"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFF00"
+                        android:textStyle="normal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <Button
+                        android:id="@+id/Category2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:backgroundTint="@color/black"
+                        android:text="Action &amp; Adventure"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFF00"
+                        android:textStyle="normal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/Category1" />
+
+                    <Button
+                        android:id="@+id/Category3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:backgroundTint="@color/black"
+                        android:text="Mystery &amp; Thriller"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFF00"
+                        android:textStyle="normal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/Category2" />
+
+                    <Button
+                        android:id="@+id/Category4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:backgroundTint="@color/black"
+                        android:text="Biographies &amp; Histories"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFF00"
+                        android:textStyle="normal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/Category3" />
+
+                    <Button
+                        android:id="@+id/Category5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:backgroundTint="@color/black"
+                        android:text="Children's"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFF00"
+                        android:textStyle="normal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/Category4" />
+                    <Button
+                        android:id="@+id/Category6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:backgroundTint="@color/black"
+                        android:text="Young Adult"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFF00"
+                        android:textStyle="normal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/Category5" />
+                    <Button
+                        android:id="@+id/Category7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:backgroundTint="@color/black"
+                        android:text="Fantasy"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFF00"
+                        android:textStyle="normal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/Category6" />
+                    <Button
+                        android:id="@+id/Category8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:backgroundTint="@color/black"
+                        android:text="Taboo"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFF00"
+                        android:textStyle="normal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/Category7" />
+                    <Button
+                        android:id="@+id/Category9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:backgroundTint="@color/black"
+                        android:text="Historical Fiction"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFF00"
+                        android:textStyle="normal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/Category8" />
+                    <Button
+                        android:id="@+id/Category10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:backgroundTint="@color/black"
+                        android:text="Horror"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFF00"
+                        android:textStyle="normal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/Category9" />
+                    <Button
+                        android:id="@+id/Category11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:backgroundTint="@color/black"
+                        android:text="Literary Fiction"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFF00"
+                        android:textStyle="normal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/Category10" />
+                    <Button
+                        android:id="@+id/Category12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:backgroundTint="@color/black"
+                        android:text="Science Fiction"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFF00"
+                        android:textStyle="normal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/Category11" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+            <TextView
+                android:id="@+id/Recomended"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Recomended"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:layout_marginStart="15dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CuratedView" />
+
+            <HorizontalScrollView
+                android:id="@+id/RecomendedView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Recomended">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/Recomended1"
+                        android:layout_width="120dp"
+                        android:layout_height="175dp"
+                        android:scaleType="centerCrop"
+                        android:layout_marginStart="5dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/RecomendedTile1"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Patricia Brent, Spinster"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Recomended1" />
+
+                    <TextView
+                        android:id="@+id/RecomendedAuthor1"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Herbert George Jenkins"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:textStyle="normal"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/RecomendedTile1" />
+
+                    <ImageView
+                        android:id="@+id/Recomended2"
+                        android:layout_width="120dp"
+                        android:layout_height="175dp"
+                        android:scaleType="centerCrop"
+                        android:layout_marginStart="30dp"
+                        app:layout_constraintStart_toEndOf="@+id/Recomended1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/RecomendedTile2"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="5dp"
+                        android:text="The Grand Babylon Hotel"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/Recomended1"
+                        app:layout_constraintTop_toBottomOf="@+id/Recomended2" />
+
+                    <TextView
+                        android:id="@+id/RecomendedAuthor2"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Arnold Bennett"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:textStyle="normal"
+                        app:layout_constraintStart_toEndOf="@+id/Recomended1"
+                        app:layout_constraintTop_toBottomOf="@+id/RecomendedTile2" />
+
+                    <ImageView
+                        android:id="@+id/Recomended3"
+                        android:scaleType="centerCrop"
+                        android:layout_width="120dp"
+                        android:layout_height="175dp"
+                        android:layout_marginStart="30dp"
+                        app:layout_constraintStart_toEndOf="@+id/Recomended2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/RecomendedTile3"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="5dp"
+                        android:text="A Connecticut Yankee in King Arthur's Court"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/Recomended2"
+                        app:layout_constraintTop_toBottomOf="@+id/Recomended3" />
+
+                    <TextView
+                        android:id="@+id/RecomendedAuthor3"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Mark Twain"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:textStyle="normal"
+                        app:layout_constraintStart_toEndOf="@+id/Recomended2"
+                        app:layout_constraintTop_toBottomOf="@+id/RecomendedTile3" />
+
+                    <ImageView
+                        android:id="@+id/Recomended4"
+                        android:scaleType="centerCrop"
+                        android:layout_width="120dp"
+                        android:layout_height="175dp"
+                        android:layout_marginStart="30dp"
+                        app:layout_constraintStart_toEndOf="@+id/Recomended3"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/RecomendedTitle4"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="5dp"
+                        android:text="The Black Moth"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/Recomended3"
+                        app:layout_constraintTop_toBottomOf="@+id/Recomended4" />
+
+                    <TextView
+                        android:id="@+id/RecomendedAuthor4"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Georgette Heyer"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:textStyle="normal"
+                        app:layout_constraintStart_toEndOf="@+id/Recomended3"
+                        app:layout_constraintTop_toBottomOf="@+id/RecomendedTitle4" />
+
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <Button
+                android:id="@+id/Audio"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="4dp"
+                android:backgroundTint="#FFA500"
+                android:text="Audio"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/readid"
+                app:layout_constraintHorizontal_bias="0.113"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_gravity="bottom"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/card"
+            app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"
+
+            app:cardElevation="10dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="bottom"
+            app:cardCornerRadius="10dp">
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/nav_view"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:elevation="20dp"
+                android:outlineSpotShadowColor="@color/black"
+                app:itemIconTint="@color/bottom_diff_color"
+                app:itemTextColor="@color/bottom_diff_color"
+                android:soundEffectsEnabled="true"
+                app:labelVisibilityMode="labeled"
+
+                android:layout_width="match_parent"
+                app:itemIconSize="20dp"
+                android:background="#fff"
+                android:layout_alignParentBottom="true"
+                android:layout_height="70dp"
+                app:menu="@menu/menu_navigation" />
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

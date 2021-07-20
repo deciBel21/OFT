@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "717468167378",
+    "project_id": "book-project-d2ab5",
+    "storage_bucket": "book-project-d2ab5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:717468167378:android:34ad306d3439aa2bd8d10b",
+        "android_client_info": {
+          "package_name": "com.decibelinc.OFT"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "717468167378-1gal3mvpm89bgnk51p947jcteghk9kc8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOl6fjAfsY6ghIc-UjRpX8jTf7iEgdKmI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "717468167378-1gal3mvpm89bgnk51p947jcteghk9kc8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

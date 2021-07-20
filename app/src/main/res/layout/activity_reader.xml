@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Reader">
+
+
+
+   <androidx.cardview.widget.CardView
+       android:layout_width="wrap_content"
+       app:cardCornerRadius="30dp"
+       android:layout_height="wrap_content">
+       <com.github.barteksc.pdfviewer.PDFView
+           android:id="@+id/pdfView"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <ImageView
+               android:id="@+id/Settings"
+               android:layout_width="40dp"
+               android:layout_height="30dp"
+               android:layout_alignParentStart="true"
+               android:layout_marginStart="340dp"
+               android:layout_marginTop="10dp"
+               android:contentDescription="TODO"
+               android:scaleType="center"
+               android:src="@drawable/ic_baseline_nights_stay_24"
+               android:visibility="invisible" />
+           <!-- <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Loading..."
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:textSize="35sp"
+                />-->
+           <ProgressBar
+               android:progressBackgroundTint="@color/black"
+               android:id="@+id/progresBar"
+               android:layout_width="70dp"
+               android:layout_height="70dp"
+               android:layout_centerInParent="true"
+               />
+
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="60dp"
+               android:backgroundTint="#FFFF00"
+               android:layout_alignParentBottom="true">
+               <SeekBar
+                   android:id="@+id/seekBarScrubber"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:progressBackgroundTint="@color/white"
+                   android:progressTint="#FFFF00"
+                   android:thumb="@drawable/thumb_shape2"
+                   android:layout_gravity="center"
+                   app:layout_constraintTop_toTopOf="parent" />
+           </RelativeLayout>
+
+
+
+
+       </com.github.barteksc.pdfviewer.PDFView>
+   </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

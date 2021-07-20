@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:backgroundTint="@color/black"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    tools:context=".Podcast_Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/main_View"
+                android:layout_width="350dp"
+                app:cardCornerRadius="20dp"
+                android:layout_height="190dp"
+                android:layout_marginTop="45dp"
+                android:background="#C0C0C0"
+                android:backgroundTint="#C0C0C0"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/bookimage"
+                    android:layout_width="175dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="2dp"
+                    android:padding="9dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/shawndemo" />
+
+                <TextView
+                    android:id="@+id/ttl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="175dp"
+                    android:layout_marginTop="25dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingTop="5dp"
+                    android:paddingRight="5dp"
+                    android:text="Title"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/qbookname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="175dp"
+                    android:layout_marginTop="40dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingTop="5dp"
+                    android:paddingRight="5dp"
+                    android:text="Joe Rogan Experience:- Elon Musk"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/ttl" />
+
+                <TextView
+                    android:id="@+id/auth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/qbookname"
+                    android:layout_marginStart="175dp"
+                    android:layout_marginTop="80dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingTop="5dp"
+                    android:paddingRight="5dp"
+                    android:text="Author"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/qwriter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/auth"
+                    android:layout_marginStart="175dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginBottom="5dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="Joe Rogan"
+                    android:textColor="#2C2C2C"
+                    android:textSize="16dp"
+                    android:textStyle="italic" />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/main_View2"
+                android:layout_width="350dp"
+                android:layout_height="190dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="15dp"
+                android:background="#FF0000"
+                android:backgroundTint="#FF0000"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/main_View">
+
+                <ImageView
+                    android:id="@+id/bookimage2"
+                    android:padding="9dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_width="177dp"
+                    android:src="@drawable/shawndemo"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/ttl2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginStart="175dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingTop="5dp"
+                    android:paddingRight="5dp"
+                    android:text="Title"
+                    android:textColor="#00008B"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/qbookname2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingTop="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="175dp"
+                    android:text="Jennifer Pan"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    app:layout_constraintTop_toBottomOf="@+id/ttl" />
+                <TextView
+                    android:id="@+id/auth2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/qbookname"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:layout_marginStart="175dp"
+                    android:layout_marginTop="80dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="Author"
+                    android:textColor="#00008B"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/qwriter2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/auth"
+                    android:layout_marginTop="100dp"
+                    android:textStyle="italic"
+                    android:ellipsize="end"
+                    android:layout_marginStart="175dp"
+                    android:gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:maxLines="1"
+                    android:text="Casefile"
+                    android:textColor="#2C2C2C"
+                    android:textSize="16dp" />
+
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/main_View3"
+                android:layout_width="350dp"
+                android:layout_height="190dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="15dp"
+                android:background="#800080"
+                android:backgroundTint="#800080"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/main_View2">
+
+            <ImageView
+                android:id="@+id/bookimage3"
+                android:padding="9dp"
+                android:layout_marginStart="2dp"
+                android:layout_width="175dp"
+                android:src="@drawable/shawndemo"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/ttl3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="175dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:text="Title"
+                android:textColor="#FFFF00"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/qbookname3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="175dp"
+                android:text="Jay Shetty On How To Think Like A Monk &amp; Live Like A Superstar"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/ttl" />
+            <TextView
+                android:id="@+id/auth3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/qbookname"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:layout_marginStart="175dp"
+                android:layout_marginTop="80dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:text="Author"
+                android:textColor="#FFFF00"
+                android:textSize="12dp" />
+            <TextView
+                android:id="@+id/qwriter3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/auth"
+                android:layout_marginTop="100dp"
+                android:textStyle="italic"
+                android:ellipsize="end"
+                android:layout_marginStart="175dp"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"
+                android:maxLines="1"
+                android:text="The Ranveer Show"
+                android:textColor="#2C2C2C"
+                android:textSize="16dp" />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/main_View4"
+                android:layout_width="350dp"
+                app:cardCornerRadius="20dp"
+                android:layout_height="190dp"
+                android:layout_marginTop="15dp"
+                android:background="#008000"
+                android:backgroundTint="#008000"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/main_View3">
+
+                <ImageView
+                    android:id="@+id/bookimage4"
+                    android:padding="9dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_width="175dp"
+                    android:src="@drawable/shawndemo"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/ttl4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginStart="175dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingTop="5dp"
+                    android:paddingRight="5dp"
+                    android:text="Title"
+                    android:textColor="#FFC0CB"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/qbookname4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingTop="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="175dp"
+                    android:text="How to get Rich"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    app:layout_constraintTop_toBottomOf="@+id/ttl" />
+                <TextView
+                    android:id="@+id/auth4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/qbookname"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:layout_marginStart="175dp"
+                    android:layout_marginTop="80dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="Author"
+                    android:textColor="#FFC0CB"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/qwriter4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/auth"
+                    android:layout_marginTop="100dp"
+                    android:textStyle="italic"
+                    android:ellipsize="end"
+                    android:layout_marginStart="175dp"
+                    android:gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:maxLines="1"
+                    android:text="Naval"
+                    android:textColor="#2C2C2C"
+                    android:textSize="16dp" />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/main_View5"
+                android:layout_width="350dp"
+                app:cardCornerRadius="20dp"
+                android:layout_height="190dp"
+                android:layout_marginTop="15dp"
+                android:background="#FFFF00"
+                android:backgroundTint="#FFFF00"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/main_View4">
+
+                <ImageView
+                    android:id="@+id/bookimage5"
+                    android:padding="9dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_width="175dp"
+                    android:src="@drawable/shawndemo"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/ttl5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginStart="175dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingTop="5dp"
+                    android:paddingRight="5dp"
+                    android:text="Title"
+                    android:textColor="#6A6A6A"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/qbookname5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingTop="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="175dp"
+                    android:text="12 True Scary 911 Call Stories ft. Urmaker"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    app:layout_constraintTop_toBottomOf="@+id/ttl" />
+                <TextView
+                    android:id="@+id/auth5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/qbookname"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:layout_marginStart="175dp"
+                    android:layout_marginTop="80dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="Author"
+                    android:textColor="#6A6A6A"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/qwriter5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/auth"
+                    android:layout_marginTop="100dp"
+                    android:textStyle="italic"
+                    android:ellipsize="end"
+                    android:layout_marginStart="175dp"
+                    android:gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:maxLines="1"
+                    android:text="Lets Read!"
+                    android:textColor="#2C2C2C"
+                    android:textSize="16dp" />
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

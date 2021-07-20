@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.decibelinc.OFT">
+
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="OFT"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SplashScreen"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Player"></activity>
+        <activity android:name=".Podcast_Activity" />
+        <activity android:name=".no_internet_activity" />
+        <activity android:name=".Reader" />
+        <activity android:name=".ReadActivity" />
+        <activity
+            android:name=".Read_Activity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".HomeActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
